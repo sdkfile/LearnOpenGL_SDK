@@ -37,5 +37,5 @@ add_library(glad extern/glad/src/glad.c)
 
 # Targets
 add_executable(LeanOpenGL_SDK main.cpp)
-target_link_libraries(learn_opengl OpenGL::GL glfw assimp glad)
-target_compile_definitions(learn_opengl PUBLIC GLFW_INCLUDE_NONE)
+target_link_libraries(LeanOpenGL_SDK OpenGL::GL glfw assimp glad)
+target_compile_definitions(LeanOpenGL_SDK PUBLIC GLFW_INCLUDE_NONE)
