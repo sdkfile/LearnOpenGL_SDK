@@ -1,16 +1,32 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S "/Users/sdkfile/Desktop/R&D 스터디/LeanOpenGL_SDK" -B "/Users/sdkfile/Desktop/R&D 스터디/LeanOpenGL_SDK/cmake-build-debug"
--- The C compiler identification is AppleClang 14.0.0.14000029
--- The CXX compiler identification is AppleClang 14.0.0.14000029
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/sdkfile/Desktop/R&D 스터디/LeanOpenGL_SDK/cmake-build-debug
+-- Found OpenGL: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework   
+OPENGL_INCLUDE_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework
+CMake Error at CMakeLists.txt:17 (add_subdirectory):
+  add_subdirectory given source "extern/glfw" which is not an existing
+  directory.
+
+
+CMake Error at CMakeLists.txt:26 (add_subdirectory):
+  add_subdirectory given source "extern/assimp" which is not an existing
+  directory.
+
+
+CMake Error at CMakeLists.txt:31 (find_package):
+  By not providing "FindGLM.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "GLM", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "GLM" with any of
+  the following names:
+
+    GLMConfig.cmake
+    glm-config.cmake
+
+  Add the installation prefix of "GLM" to CMAKE_PREFIX_PATH or set "GLM_DIR"
+  to a directory containing one of the above files.  If "GLM" provides a
+  separate development package or SDK, be sure it has been installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/sdkfile/Desktop/R&D 스터디/LeanOpenGL_SDK/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/sdkfile/Desktop/R&D 스터디/LeanOpenGL_SDK/cmake-build-debug/CMakeFiles/CMakeError.log".
