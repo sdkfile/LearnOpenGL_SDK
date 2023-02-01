@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(LeanOpenGL_SDK)
+project(LearnOpenGL_SDK)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -36,6 +36,6 @@ include_directories(extern/glad/include)
 add_library(glad extern/glad/src/glad.c)
 
 # Targets
-add_executable(LeanOpenGL_SDK main.cpp)
-target_link_libraries(LeanOpenGL_SDK OpenGL::GL glfw assimp glad)
-target_compile_definitions(LeanOpenGL_SDK PUBLIC GLFW_INCLUDE_NONE)
+add_executable(LearnOpenGL_SDK main.cpp)
+target_link_libraries(LearnOpenGL_SDK OpenGL::GL glfw assimp glad)
+target_compile_definitions(LearnOpenGL_SDK PUBLIC GLFW_INCLUDE_NONE)
